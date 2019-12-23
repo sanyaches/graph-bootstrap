@@ -4,8 +4,8 @@ import MatrixInput from '../MatrixInput';
 
 const Lab6 = props => {
   return (
-    <div>
-      <h2>Эйлеровы графы</h2>
+    <div className="container">
+      <h2 className="display-4">Эйлеровы графы</h2>
       <div>
         <h4>Матрица G:</h4>
         <MatrixInput
@@ -14,7 +14,7 @@ const Lab6 = props => {
           ChangeVertexes={props.ChangeVertexes}
         />
       </div>
-      <button onClick={() => props.showResult(false)}>Расчитать</button>
+      <button className="btn btn-outline-success btn-lg" onClick={() => props.showResult(false)}>Расчитать</button>
       {!props.state.hideOutput && <Lab6Result graph={props.state.AdjMatrix} />}
     </div>
   );

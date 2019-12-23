@@ -18,9 +18,9 @@ function App() {
     <div>
       <Header />
       <div className="section">
-        <div className="nav">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <Navigation />
-        </div>
+        </nav>
         <div className="content">
           <Route path="/lab1" component={Lab1Container} />
           <Route path="/lab2" component={Lab2Container} />

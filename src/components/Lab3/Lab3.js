@@ -4,8 +4,8 @@ import Lab3Result from './Lab3Result';
 
 const Lab3 = props => {
   return (
-    <div>
-      <h2>Поиск минимального пути из v в w в орграфе G. Расстояния в графе</h2>
+    <div className="container">
+      <h2 className="display-4">Поиск минимального пути из v в w в орграфе G. Расстояния в графе</h2>
       <div>
         <h4>Матрица G</h4>
         <MatrixInput
@@ -14,7 +14,7 @@ const Lab3 = props => {
           ChangeVertexes={props.ChangeVertexes}
         />
       </div>
-      <button onClick={() => props.showResult()}>Расчитать</button>
+      <button className="btn btn-outline-success btn-lg" onClick={() => props.showResult()}>Расчитать</button>
       {!props.state.hideOutput ? (
         <Lab3Result graph={props.state.AdjMatrix} />
       ) : (

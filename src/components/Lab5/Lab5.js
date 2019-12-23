@@ -4,8 +4,8 @@ import Lab5Result from './Lab5Result';
 
 const Lab5 = props => {
   return (
-    <div>
-      <h2>
+    <div className="container">
+      <h2 className="display-4">
         Минимальные пути (маршруты) в нагруженных орграфах (графах). Алгоритм
         Флойда-Уоршелла
       </h2>
@@ -18,7 +18,7 @@ const Lab5 = props => {
           weighted={true}
         />
       </div>
-      <button onClick={() => props.showResult(false)}>Расчитать</button>
+      <button className="btn btn-outline-success btn-lg" onClick={() => props.showResult(false)}>Расчитать</button>
       {!props.state.hideOutput && <Lab5Result graph={props.state.AdjMatrix} />}
     </div>
   );

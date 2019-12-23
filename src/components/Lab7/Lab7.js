@@ -4,8 +4,8 @@ import MatrixInput from '../MatrixInput';
 
 const Lab7 = props => {
   return (
-    <div>
-      <h2>Гамильтоновы графы.</h2>
+    <div className="container">
+      <h2 className="display-4">Гамильтоновы графы.</h2>
       <div>
         <h4>Матрица G:</h4>
         <MatrixInput
@@ -15,7 +15,7 @@ const Lab7 = props => {
           weighted={true}
         />
       </div>
-      <button onClick={() => props.showResult(false)}>Расчитать</button>
+      <button className="btn btn-outline-success btn-lg" onClick={() => props.showResult(false)}>Расчитать</button>
       {!props.state.hideOutput && <Lab7Result graph={props.state.AdjMatrix} />}
     </div>
   );

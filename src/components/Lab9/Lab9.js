@@ -4,8 +4,8 @@ import Lab9Result from './Lab9Result';
 
 const Lab9 = props => {
   return (
-    <div>
-      <h2>Поток в сети. Алгоритм Форда–Фалкерсона</h2>
+    <div className="container">
+      <h2 className="display-4">Поток в сети. Алгоритм Форда–Фалкерсона</h2>
       <div>
         <h4>Матрица G:</h4>
         <MatrixInput
@@ -15,7 +15,7 @@ const Lab9 = props => {
           weighted={true}
         />
       </div>
-      <button onClick={() => props.showResult(false)}>Расчитать</button>
+      <button className="btn btn-outline-success btn-lg" onClick={() => props.showResult(false)}>Расчитать</button>
       {!props.state.hideOutput && <Lab9Result graph={props.state.AdjMatrix} />}
     </div>
   );

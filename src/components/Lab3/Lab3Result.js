@@ -54,7 +54,7 @@ const Lab3Result = ({graph}) => {
       </div>
       <div className={styles.flexContainer}>
         <div>
-          <h2>Центр графа</h2>
+          <h2 className="display-4">Центр графа</h2>
           <GraphDrawing
             matrix={graphCenter.adjMatrix}
             nodes={graphCenter.nodes}
@@ -62,7 +62,7 @@ const Lab3Result = ({graph}) => {
           />
         </div>
         <div>
-          <h2>Периферия графа</h2>
+          <h2 className="display-4">Периферия графа</h2>
           <GraphDrawing
             matrix={graphPreiphery.adjMatrix}
             nodes={graphPreiphery.nodes}

@@ -11,10 +11,12 @@ const InputLine = props => {
     };
 
     return (
-        <li>
-            <label>Вершина выхода {props.index}: вершины выхода: </label>
-            <input type="text" value={val} onChange={ChangeValue}></input>
-        </li>
+        <div className="input-group mb-3">
+            <div className="input-group-prepend">
+                <span className="input-group-text" >Вершина выхода {props.index}: вершины выхода: </span>
+            </div>
+            <input className="form-control" type="text" value={val} onChange={ChangeValue}></input>
+        </div>
     );
 };
 

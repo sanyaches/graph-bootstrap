@@ -5,8 +5,8 @@ import styles from './Lab2.module.css';
 
 const Lab2 = props => {
   return (
-    <div>
-      <h2>Бинарные операции над графами</h2>
+    <div className="container">
+      <h2 className="display-4">Бинарные операции над графами</h2>
       <div className={styles.inputContainer}>
         <div>
           <h4>Матрица G1</h4>
@@ -25,7 +25,7 @@ const Lab2 = props => {
           />
         </div>
       </div>
-      <button onClick={() => props.showResult()}>Расчитать</button>
+      <button className="btn btn-outline-success btn-lg" onClick={() => props.showResult()}>Расчитать</button>
       {!props.state.hideOutput ? (
         <Lab2Result
           FirstGraph={props.state.FirstAdjMatrix}

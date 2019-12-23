@@ -19,9 +19,12 @@ const AdjListInput = props => {
   }
   return (
     <div>
-      <div>
-        <label>Количество вершин:</label>
+      <div className="input-group mb-3">
+        <div className="input-group-prepend">
+          <span className="input-group-text">Количество вершин:</span>
+        </div>
         <input
+          className="form-control"
           type="number"
           required
           value={vertexCount}
@@ -30,7 +33,7 @@ const AdjListInput = props => {
       </div>
       <div>
         <p>Список смежности графа:</p>
-        <ul>{Lists}</ul>
+        <section>{Lists}</section>
       </div>
     </div>
   );

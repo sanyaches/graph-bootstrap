@@ -4,8 +4,8 @@ import Lab8Result from './Lab8Result';
 
 const Lab8 = props => {
   return (
-    <div>
-      <h2>Деревья и остовы графов. Алгоритм Краскала. Алгоритм Прима</h2>
+    <div className="container">
+      <h2 className="display-4">Деревья и остовы графов. Алгоритм Краскала. Алгоритм Прима</h2>
       <div>
         <h4>Матрица G:</h4>
         <MatrixInput
@@ -15,7 +15,7 @@ const Lab8 = props => {
           weighted={true}
         />
       </div>
-      <button onClick={() => props.showResult(false)}>Расчитать</button>
+      <button className="btn btn-outline-success btn-lg" onClick={() => props.showResult(false)}>Расчитать</button>
       {!props.state.hideOutput && <Lab8Result graph={props.state.AdjMatrix} />}
     </div>
   );

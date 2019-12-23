@@ -24,7 +24,7 @@ const MatrixInput = props => {
       ? nodeEdges.map(edge => edge.to + (edge.to && ':' + edge.weight))
       : nodeEdges.map(edge => edge.to);
     return (
-      <div className="row" key={i}>
+      <div className="row input-group input-group-lg" key={i}>
         <label>From: '{node}' to: </label>
         <input
           type="text"

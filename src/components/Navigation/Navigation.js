@@ -3,15 +3,17 @@ import {Link} from 'react-router-dom';
 
 export default function Navigation() {
   return (
-    <ol className="nav-list">
-      {themes.map((theme, i) => (
-        <li className="nav-item" key={i}>
-          <Link to={'/lab' + (i + 1)} className="nav-link">
-            {theme}
-          </Link>
-        </li>
-      ))}
-    </ol>
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav">
+        {themes.map((theme, i) => (
+          <li className="nav-item" >
+            <Link to={'/lab' + (i + 1)} className="nav-link" activeClassName="active" tag="li" >
+              {theme}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
