@@ -33,11 +33,11 @@ const Lab8Result = ({graph}) => {
         isWeighted={true}
         isOrgraph={false}
       />
-      <h4>Матрица длин дуг:</h4>
+      <h4 className="mb-3 display-4">Матрица длин дуг:</h4>
       <Matrix matrix={DmatrixToOutput} nodes={Dmatrix.nodes} />
       <div className={styles.flexContainer}>
         <div>
-          <h4>Минимальное остовное дерево (алгоритм Крускала)</h4>
+          <h4 className="mb-3 display-4">Минимальное остовное дерево (алгоритм Крускала)</h4>
           <GraphDrawing
             matrix={minKruskalMatrix.matrix}
             nodes={minKruskalMatrix.nodes}
@@ -53,7 +53,7 @@ const Lab8Result = ({graph}) => {
         </div>
 
         <div>
-          <h4>Максимальное остовное дерево (алгоритм Крускала)</h4>
+          <h4 className="mb-3 display-4">Максимальное остовное дерево (алгоритм Крускала)</h4>
           <GraphDrawing
             matrix={maxKruskalMatrix.matrix}
             nodes={maxKruskalMatrix.nodes}
@@ -69,7 +69,7 @@ const Lab8Result = ({graph}) => {
         </div>
       </div>
       <div>
-        <h4>Минимальное остовное дерево (алгоритм Прима)</h4>
+        <h4 className="mb-3 display-4">Минимальное остовное дерево (алгоритм Прима)</h4>
         <GraphDrawing
           matrix={minPrimMatrix.matrix}
           nodes={minPrimMatrix.nodes}

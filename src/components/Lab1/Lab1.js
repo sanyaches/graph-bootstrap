@@ -5,7 +5,7 @@ import Lab1Result from './Lab1Result';
 const Lab1 = props => {
   return (
     <div className="container">
-      <h2 className="display-4">Основные понятия, определения и способы задания графов</h2>
+      <h2 className="display-4 mb-3">Основные понятия, определения и способы задания графов</h2>
       <AdjListInput
         state={props.state}
         ChangeAdjacency={props.ChangeAdjacency}

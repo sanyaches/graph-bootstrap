@@ -39,7 +39,7 @@ const Lab3Result = ({graph}) => {
           length={140}
         />
         <div>
-          <h4>Матрица расстояний:</h4>
+          <h4 className="mb-3 display-4">Матрица расстояний:</h4>
           <Matrix
             matrix={distanceMatrix.Dmatrix}
             nodes={distanceMatrix.nodes}
@@ -54,7 +54,7 @@ const Lab3Result = ({graph}) => {
       </div>
       <div className={styles.flexContainer}>
         <div>
-          <h2 className="display-4">Центр графа</h2>
+          <h2 className="display-4 mb-3">Центр графа</h2>
           <GraphDrawing
             matrix={graphCenter.adjMatrix}
             nodes={graphCenter.nodes}
@@ -62,7 +62,7 @@ const Lab3Result = ({graph}) => {
           />
         </div>
         <div>
-          <h2 className="display-4">Периферия графа</h2>
+          <h2 className="display-4 mb-3">Периферия графа</h2>
           <GraphDrawing
             matrix={graphPreiphery.adjMatrix}
             nodes={graphPreiphery.nodes}

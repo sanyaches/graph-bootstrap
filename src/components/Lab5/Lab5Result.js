@@ -21,11 +21,11 @@ const Lab5Result = ({graph}) => {
       />
       <div className={styles.matrixesContainer}>
         <div>
-          <h4>Матрица длин дуг</h4>
+          <h4 className="mb-3 display-4">Матрица длин дуг</h4>
           <Matrix matrix={DmatrixToOutput} nodes={Dmatrix.nodes} />
         </div>
         <div>
-          <h4>Матрица кратчайших путей:</h4>
+          <h4 className="mb-3 display-4">Матрица кратчайших путей:</h4>
           <Matrix matrix={DmMatrix} nodes={Dmatrix.nodes} />
         </div>
       </div>

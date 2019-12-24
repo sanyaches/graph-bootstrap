@@ -6,10 +6,10 @@ import styles from './Lab2.module.css';
 const Lab2 = props => {
   return (
     <div className="container">
-      <h2 className="display-4">Бинарные операции над графами</h2>
+      <h2 className="display-4 mb-3">Бинарные операции над графами</h2>
       <div className={styles.inputContainer}>
         <div>
-          <h4>Матрица G1</h4>
+          <h4 className="mb-3 display-4">Матрица G1</h4>
           <MatrixInput
             matrix={props.state.FirstAdjMatrix}
             ChangeAdjacency={props.ChangeFirstAdjacency}
@@ -17,7 +17,7 @@ const Lab2 = props => {
           />
         </div>
         <div>
-          <h4>Матрица G2</h4>
+          <h4 className="mb-3 display-4">Матрица G2</h4>
           <MatrixInput
             matrix={props.state.SecondAdjMatrix}
             ChangeAdjacency={props.ChangeSecondAdjacency}

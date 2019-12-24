@@ -5,6 +5,7 @@
 
 .operationContainer {
   display: flex;
+  justify-content: center;
 }
 
 .operationContainer div {

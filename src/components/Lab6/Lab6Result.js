@@ -23,11 +23,11 @@ const Lab6Result = ({graph}) => {
       />
       <div className={styles.matrixesContainer}>
         <div className={styles.matrix}>
-          <h4>Матрица смежности:</h4>
+          <h4 className="mb-3 display-4">Матрица смежности:</h4>
           <Matrix matrix={adj.adjMatrix} nodes={adj.nodes} />
         </div>
         {/*<div className={styles.matrix}>
-          <h4>Матрица инцедентности:</h4>
+          <h4 className="mb-3 display-4">Матрица инцедентности:</h4>
           <Matrix matrix={inc} nodes={graph.nodes} isInc={true} />
   </div>*/}
       </div>

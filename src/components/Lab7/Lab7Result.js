@@ -17,7 +17,7 @@ const Lab7Result = ({graph}) => {
         isWeighted={true}
       />
       <div>
-        <h4>Матрица длин дуг:</h4>
+        <h4 className="mb-3 display-4">Матрица длин дуг:</h4>
         <Matrix matrix={DmatrixToOutput} nodes={Dmatrix.nodes} />
       </div>
     </div>

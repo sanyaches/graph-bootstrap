@@ -23,23 +23,23 @@ const Lab4Result = ({graph}) => {
       <GraphDrawing matrix={adj.adjMatrix} nodes={adj.nodes} length={100} />
       <div className={styles.matrixesContainer}>
         <div className={styles.matrix}>
-          <h4>Матрица смежности:</h4>
+          <h4 className="mb-3 display-5">Матрица смежности:</h4>
           <Matrix matrix={adj.adjMatrix} nodes={adj.nodes} />
         </div>
         <div className={styles.matrix}>
-          <h4>Матрица инцедентности:</h4>
+          <h4 className="mb-3 display-5">Матрица инцедентности:</h4>
           <Matrix matrix={inc} nodes={graph.nodes} isInc={true} />
         </div>
         <div className={styles.matrix}>
-          <h4>Матрица достижимости:</h4>
+          <h4 className="mb-3 display-5">Матрица достижимости:</h4>
           <Matrix matrix={reach} nodes={graph.nodes} />
         </div>
         <div className={styles.matrix}>
-          <h4>Матрица сильной связности:</h4>
+          <h4 className="mb-3 display-5">Матрица сильной связности:</h4>
           <Matrix matrix={strCon} nodes={graph.nodes} />
         </div>
       </div>
-      <h4>Компоненты связности:</h4>
+      <h4 className="mb-3 display-5">Компоненты связности:</h4>
       <div className={styles.adjCompContainer}>
         {conComponents.compAdj.map((el, i) => (
           <Matrix key={i} matrix={el.adjMatrix} nodes={el.nodes} />

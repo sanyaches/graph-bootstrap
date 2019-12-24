@@ -20,7 +20,7 @@ const Lab2Result = ({FirstGraph, SecondGraph}) => {
   return (
     <div>
       <div>
-        <h4>G1 &cup; G2</h4>
+        <h4 className="mb-3 display-4">G1 &cup; G2</h4>
         <div className={styles.operationContainer}>
           <Matrix matrix={union.adjMatrix} nodes={union.nodes} />
           <GraphDrawing
@@ -31,7 +31,7 @@ const Lab2Result = ({FirstGraph, SecondGraph}) => {
         </div>
       </div>
       <div>
-        <h4>G1 &cap; G2</h4>
+        <h4 className="mb-3 display-4">G1 &cap; G2</h4>
         <div className={styles.operationContainer}>
           <Matrix matrix={intersection.adjMatrix} nodes={intersection.nodes} />
           <GraphDrawing
@@ -42,7 +42,7 @@ const Lab2Result = ({FirstGraph, SecondGraph}) => {
         </div>
       </div>
       <div>
-        <h4>G1 + G2</h4>
+        <h4 className="mb-3 display-4">G1 + G2</h4>
         <div className={styles.operationContainer}>
           <Matrix matrix={compound.adjMatrix} nodes={compound.nodes} />
           <GraphDrawing
@@ -53,7 +53,7 @@ const Lab2Result = ({FirstGraph, SecondGraph}) => {
         </div>
       </div>
       <div>
-        <h4>G1 &#8853; G2</h4>
+        <h4 className="mb-3 display-4">G1 &#8853; G2</h4>
         <div className={styles.operationContainer}>
           <Matrix matrix={ringAmount.adjMatrix} nodes={ringAmount.nodes} />
           <GraphDrawing
@@ -64,7 +64,7 @@ const Lab2Result = ({FirstGraph, SecondGraph}) => {
         </div>
       </div>
       <div>
-        <h4>G1 x G2</h4>
+        <h4 className="mb-3 display-4">G1 x G2</h4>
         <div className={styles.operationContainer}>
           <Matrix matrix={cartesian.adjMatrix} nodes={cartesian.nodes} />
           <GraphDrawing
